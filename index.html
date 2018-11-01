@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Visualization 4</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+	<script type="text/javascript" rel='stylesheet' src="jquery.min.js"> </script>
+</head>
+<body class="noselect">
+<div class="center">
+	<div class="game_area">
+		<div class="level_container">
+			<div class="level one" id="level_one">
+				<div class="level_wrap">
+					Level 1
+				</div>
+			</div>
+			<div class="level two" id="level_two">
+				<div class="level_wrap">
+					Level 2
+				</div>
+				<img class="lock" id="lock_two" src="lock.png">
+			</div>
+			<div class="level three" id="level_three">
+				<div class="level_wrap">
+					Level 3
+				</div>
+				<img class="lock" id="lock_three" src="lock.png">
+			</div>
+		</div>
+		<div class="top_atom_area_container">
+			<div class="before_container">
+				<div class="before_label"> BEFORE </div>
+				<div class="equation" id="reactants">
+					<select id="before1">
+						<option> </option>
+					</select>
+					<span class="formula" id="reactant1">H</span>
+					<div class="before_plus"> + </div>
+					<select id="before2">
+						<option> </option>
+					</select>
+					 <span class="formula"  id="reactant2">N<sub>2</sub></span>
+				</div>
+				<div class="reactant left" id="reactant1_box">
+					 <span id="reactant_1"> Reactant 1 </span>
+					 <div id="images_reactant1_box"> </div>
+				 </div>
+				<div class="reactant right" id="reactant2_box">
+					Reactant 2
+ 					<div id="images_reactant2_box"> </div>
+				</div>
+			</div>
+			<div class="control_container">
+				<div class="control_center">
+					<div> DURING </div>
+					<button class="break_bonds"> Break Bonds </button>
+					<button class="start_over"> Start Over </button>
+				</div>
+			</div>
+			<canvas id="main_canvas" height="220" width="500"></canvas>
+			<div class="output_formula"> X </div>
+			<img id='atom_display'>
+			<div class="after_container">
+				<div class="after_wrapper">
+					<div class="after_label"> AFTER </div>
+					<button class="check"> Check </button>
+				</div>
+				<div class="equation">
+					<select id="after1" disabled>
+
+					</select>
+					<span class="formula" id="product1">NH<sub>3</sub> </span>
+					<div class="after_plus"> + </div>
+					<select id="after2" disabled>
+						<option></option>
+					</select>
+					<span class="formula" id="product2"></span>
+				</div>
+				<div class="product left" id="product1_box"> <span class="label" id="product_1">Products </span> </div>
+				<div class="product right" id="product2_box"> <span class="label"> Product 2 </span> </div>
+			</div>
+		</div>
+		<div class="bottom_data_area_container">
+			<div class="directions_container">
+				<div class="direction_text" id="directions">
+					ADD INSTRUCTIONS HERE.
+				</div>
+			</div>
+			<div class="graph_container">
+				<canvas id="graph" height="160" width="320"> </canvas>
+				<!--<span id="images"> </span>-->
+			</div>
+		</div>
+	</div>
+</div>
+<footer style='text-align: center;'>
+	Created by Volodymyr Siedlecki & Hunter Chen.
+</footer>
+</body>
+<footer>
+	<script type="text/javascript" rel='stylesheet' src="code.js"></script>
+	<!--<script type="text/javascript" rel='stylesheet' src="design.js"></script>-->
+</footer>
+</html>

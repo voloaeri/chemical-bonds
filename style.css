@@ -1,0 +1,337 @@
+.noselect {
+	-webkit-touch-callout: none;
+	/* iOS Safari */
+
+	-webkit-user-select: none;
+	/* Chrome/Safari/Opera */
+
+	-khtml-user-select: none;
+	/* Konqueror */
+
+	-moz-user-select: none;
+	/* Firefox */
+
+	-ms-user-select: none;
+	/* Internet Explorer/Edge */
+
+	user-select: none;
+	/* Non-prefixed version, currently not supported by any browser */
+}
+
+.output_formula {
+  z-index: 1;
+  position: absolute;
+  width: 340px;
+  left: 160px;
+  top: 200px;
+  text-align: center;
+  display: none;
+}
+
+.formula:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+.atom {
+	height: 100%;
+	margin: 0 auto;
+  display: block;
+	padding: 1px 0 1px 0;
+}
+
+#atom_display{
+	position: absolute;
+	z-index: 3;
+	display: none;
+	background-color: white;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.center {
+	margin: 0 auto;
+	height: 450px;
+	width: 660px;
+}
+.level_container {
+	width: inherit;
+	height: 29px;
+	background-color: white;
+	border-bottom: 1px solid black;
+	position: relative;
+}
+.level_container > * {
+	width: 80px;
+	text-align: center;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	/*padding: 0 5px;*/
+}
+#level_one {
+	background-color: rgb(0, 0, 255);
+	left: 0;
+	padding: 3px 5px;
+}
+#level_one > .level_wrap {
+	width: inherit;
+}
+#level_two {
+	background-color: rgb(191, 191, 191);
+	padding: 0 5px;
+	left: 90px;
+}
+#level_two > .level_wrap {
+	padding-left: 4px;
+}
+#level_three {
+	background-color: rgb(191, 191, 191);
+	padding: 0 5px;
+	left: 180px;
+}
+#level_three > .level_wrap {
+	padding-left: 4px;
+}
+.level_wrap {
+	height: 21px;
+	width: 50px;
+	float: left;
+	margin: 0 auto;
+	line-height: 21px;
+}
+.lock {
+	margin-top: 1px;
+	float: right;
+	padding-right: 8px;
+}
+.level {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.level:hover {
+	text-shadow: 1px 1px black;
+}
+.top_atom_area_container {
+	height: 250px;
+	width: inherit;
+	text-align: center;
+	position: relative;
+}
+.before_container {
+	height: inherit;
+	width: 160px;
+	background-color: rgb(189, 215, 238);
+	float: left;
+	position: relative;
+}
+.control_container {
+	position: absolute;
+	top: 0;
+	left: 160px;
+	width: 340px;
+}
+.control_center > * {
+	float: left;
+	margin: 5px;
+	height: 20px;
+}
+.control_center {
+	width: 290px;
+	height: inherit;
+	margin: 0 auto;
+}
+.after_plus,.before_plus {
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: bold;
+}
+
+.after_plus, #after2, #product2_box {
+	display: none;
+}
+
+.break_bonds {
+	background-color: rgb(255, 242, 204);
+	border: 1px solid rgb(202, 149, 0);
+	border-radius: 5px;
+	color: rgb(202, 149, 0);
+	font-weight: bold;
+	font-size: 13px;
+}
+.break_bonds:hover {
+	box-shadow: 2px 2px 5px black;
+}
+.start_over {
+	background-color: rgb(226, 240, 214);
+	border: 1px solid rgb(76, 130, 37);
+	border-radius: 5px;
+	color: rgb(76, 130, 37);
+	font-weight: bold;
+	font-size: 13px;
+}
+.start_over:hover {
+		box-shadow: 2px 2px 5px black;
+}
+#main_canvas {
+	height: 220px;
+	width: 500px;
+	top: 30px;
+	position: absolute;
+	left: 160px;
+	z-index: 1;
+}
+.after_container {
+	height: inherit;
+	width: 160px;
+	background-color: rgb(248, 203, 173);
+	float: right;
+	position: relative;
+}
+.after_label {
+	float: left;
+}
+button {
+	float: right;
+}
+.after_wrapper {
+	width: inherit;
+	height: 20px;
+	margin-top: 2px;
+	text-align: center;
+}
+.after_label {
+	width: 55px;
+	margin: 0 15px;
+}
+.check {
+	background-color: rgb(252, 217, 211);
+	border: 1px solid rgb(185, 0, 0);
+	color: rgb(185, 0, 0);
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 13px;
+	margin: 0 5px;
+}
+.check:hover {
+		box-shadow: 2px 2px 5px black;
+}
+.reactant,
+.product {
+	height: 200px;
+	width: 74px;
+	margin: 2px;
+	border: 1px solid black;
+	position: absolute;
+
+}
+
+.label{
+	z-index: 1;
+	/*background-color: red;*/
+	position: absolute;
+	bottom: 0;
+	width: inherit;
+	top: 0;
+	left: 0;
+	height: 20px;
+}
+
+#product1_box {
+	width: 155px;
+}
+
+.left {
+	bottom: 0;
+	left: 0;
+}
+
+.right {
+	bottom: 0;
+	right: 0;
+}
+
+.reactant {
+	background-color: white;
+}
+
+.before_label {
+	width: inherit;
+	text-align: center;
+	margin-top: 2px;
+	height: 20px;
+}
+
+.bottom_data_area_container {
+	height: 170px;
+	width: inherit;
+}
+.directions_container {
+	height: 160px;
+	width: 320px;
+	float: left;
+	display: table;
+	margin: 5px;
+}
+.direction_text {
+	border: 1px solid gray;
+	border-radius: 25px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+.graph_container {
+	height: 160px;
+	width: 320px;
+	margin: 5px;
+	float: right;
+	text-align: center;
+}
+
+#graph {
+	border: 1px solid black;
+}
+
+.game_area {
+	height: 450px;
+	width: 660px;
+	background-color: white;
+}
+
+.equation {
+	z-index: 1;
+	position: absolute;
+	width: inherit;
+	left: 0;
+	bottom: 205px;
+	margin: auto;
+	font-size: 13px;
+	line-height: 13px;
+}
+
+select {
+	font-size: 13px;
+	line-height: 13px;
+	width: 36px;
+	height: 20px;
+	background-color: white;
+	text-align: center;
+	position: relative;
+	margin: 0;
+}
+
+#after1, #after2{
+	padding-left: 12px;
+	color: black;
+}
+
+#after1,#after2{
+	/*for firefox*/
+	-moz-appearance: none;
+	/*for chrome*/
+	-webkit-appearance:none;
+}
+
+#after1,#after2::-ms-expand {
+	display: none;
+}
